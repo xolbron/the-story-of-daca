@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DACA</title>
+        <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-motion-capture-components/dist/aframe-motion-capture-components.min.js"></script>
+    </head>
+    <body>     
+        <a-scene avatar-recorder avatar-replayer>
+         <a-assets>
+         <!--Sound-->
+            <audio id="music" src="Sound/VideoMusic.mp3" ></audio>
+         <!--/Sound-->
+            <img id="baby-newspaper" src="Photos/baby-newspaper.jpg">
+            <img id="daca-front-sign" src="Photos/daca_sign.jpg">
+            <img id="dream-newyork" src="Photos/dreamer_are_newyorkers.jpg">
+            <img id="platon-inspire" src="Photos/family_inspired.jpg">
+            <img id="platon-train" src="Photos/family_train.jpg">
+            <img id="free-dad" src="Photos/free-dad-shirt.jpg">
+            <img id="graduate-jail" src="Photos/graduate-jail.jpg">
+            <img id="newyork-support" src="Photos/newyork-nowall.jpg">
+            <img id="platon-group-photo" src="Photos/newyork-nowall.jpg">
+            <img id="platon-cry" src="Photos/platon-mom-crying.png">
+            <img id="tweet-2" src="Photos/tweet-2.jpg">
+            <img id="no-seperate-families" src="Photos/no-seperate-families.jpg">
+            <img id="no-seperate-families-2" src="Photos/no-seperate-2.jpg">
+            <img id="veterans_salute" src="Photos/veterans_salute.jpg">
+            <img id="" src="Photos/veterans_salute.jpg">
+            
+            <!--Videos-->
+            <!--<video id="obama-speech" autoplay="true" loop="false" src="Videos/President Obama Speaks on Department of Homeland Security Immigration Announcement (online-video-cutter.com).mp4"></video>-->
+         </a-assets>
+         
+        <!--Main Video Sceen-->
+        <a-entity>
+             <!--The Camera-->
+              <a-entity position="0 1.6 0" rotation="0 -2.5 0" wasd-controls>
+              <a-camera wasd-controls>
+             </a-camera>
+                 <a-sound src="src: url(Sound/VideoMusic.mp3)" autoplay="true" position="0 2 -1"></a-sound>
+              </a-entity>
+
+            <!--<a-video src="#obama-speech" width="16" height="9" position="0 2 -12" opacity="1">-->
+            <!--    <a-animation-->
+            <!--         attribute="opacity"-->
+            <!--         begin="100500"-->
+            <!--         dur="5000"-->
+            <!--         to="0"-->
+            <!--     ><a-animation>-->
+            <!--</a-video>-->
+        
+            <!--the Sky Color-->
+                <a-sky color="#000000"></a-sky>
+              
+              
+              <!--Front "DACA" Title after Video-->                 
+                 <a-curvedimage
+                    src="#daca-front-sign"
+                    height="7.5"
+                    radius="7"
+                    position="0 2 -1"
+                    theta-length="72"
+                    rotation="0 145 0"
+                    opacity="0"
+                >
+                 <a-animation
+                     attribute="opacity"
+                     begin="1000"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-curvedimage>
+               
+                <a-plane
+                 height="3"
+                 width="4"
+                 position="-4 4.6 5"
+                 rotation="0 140 0"
+                 src="#newyork-support" 
+                 opacity="0">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="9000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>   
+                
+                <a-plane
+                 height="5"
+                 width="4"
+                 position="10 3 8"
+                 rotation="0 -152.5 0"
+                 src="#platon-inspire" 
+                 opacity="0">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1300"
+                     dur="12000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="3"
+                 width="5"
+                 position="0 3 8"
+                 rotation="0 180 0"
+                 src="#graduate-jail" 
+                 opacity="1">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="4"
+                 width="3"
+                 position="-7 5 0"
+                 rotation="0 90 0"
+                 src="#baby-newspaper" 
+                 opacity="1">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="3.5"
+                 width="5"
+                 position="5 7 8"
+                 rotation="0 -155.5 0"
+                 src="#platon-train" 
+                 opacity="1">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="2"
+                 width="3"
+                 position="-2.5 7 -2"
+                 rotation="35 65 0"
+                 src="#dream-newyork" 
+                 opacity="1">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="2"
+                 width="3"
+                 position="0 -2 1"
+                 rotation="-55 180 0"
+                 src="#no-seperate-families"
+                 opacity="1">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="3"
+                 width="4"
+                 position="0.8 0 7"
+                 rotation="-20 175 0"
+                 src="#no-seperate-families-2"
+                 opacity="1">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="2"
+                 width="3"
+                 position="-8 2 -1"
+                 rotation="0 90 0"
+                 src="#veterans_salute"
+                 opacity="1">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="4"
+                 width="4"
+                 position="9 9 5"
+                 rotation="0 -112.5 0"
+                 src="Photos/platon-mom-crying.png"
+                 opacity="0">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                
+                <!--The Vox facts-->
+                 <a-plane
+                 height="4"
+                 width="5"
+                 position="-9 0 6"
+                 rotation="0 125 0"
+                 src="Photos/DACAfact-1.png"
+                 opacity="0">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                
+                <a-plane
+                 height="4"
+                 width="5"
+                 position="-6 11 8"
+                 rotation="10 135 0"
+                 src="Photos/DACAfact-2.png"
+                 opacity="0">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="4"
+                 width="5"
+                 position="-5.5 -5.5 5.5"
+                 rotation="-40 135 0"
+                 src="Photos/DACAfact-3.png"
+                 opacity="0">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="4"
+                 width="5"
+                 position="-8.3 10.5 3"
+                 rotation="10 105 0"
+                 src="Photos/DACAfact-4.png"
+                 opacity="0">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="9"
+                 width="6"
+                 position="7.6 2 -7"
+                 rotation="0 -55 0"
+                 src="Photos/citizenship-history.jpg"
+                 opacity="0">
+                 
+                 <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="2"
+                 width="3"
+                 position="4 3.5 7"
+                 rotation="0 200 0"
+                 src="Photos/no-deport-mom.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                
+                <a-plane
+                 height="3"
+                 width="5"
+                 position="9 -1 0"
+                 rotation="0 -87.5 0"
+                 src="Photos/old-immigrant-photo.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="3"
+                 width="4"
+                 position="9 5 3"
+                 rotation="0 -109.5 0"
+                 src="Photos/bridge-immigrants.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="5"
+                 width="4"
+                 position="-7 2 -6"
+                 rotation="0 50 0"
+                 src="Photos/cartoon-statue-liberty.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="4"
+                 width="6"
+                 position="0 9 11"
+                 rotation="0 180 0"
+                 src="Photos/child-sign-about-.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="8"
+                 width="10"
+                 position="6 12 -10"
+                 rotation="10 -45 0"
+                 src="Photos/chinese-running.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="3"
+                 width="4"
+                 position="10 1.95 3"
+                 rotation="0 -110 0"
+                 src="Photos/chinese-ship.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="4"
+                 width="6"
+                 position="7 8 -1"
+                 rotation="15 -85 0"
+                 src="Photos/chinese-wall.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="8"
+                 width="8"
+                 position="-9 -3 15"
+                 rotation="0 180 0"
+                 src="Photos/dont-deport-mom-banner.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="5.5"
+                 width="7"
+                 position="12 -4 8"
+                 rotation="-30 235 0"
+                 src="Photos/crying-prtoest.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="5.5"
+                 width="4"
+                 position="5 -4.5 -4.5"
+                 rotation="-20 -55 0"
+                 src="Photos/circle-banner.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="6"
+                 width="8"
+                 position="-9 -3 -1"
+                 rotation="-10 -270 0"
+                 src="Photos/hope-from-church.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="6"
+                 width="6"
+                 position="3 14 7"
+                 rotation="20 190 0"
+                 src="Photos/ice-double-under-trump.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="7"
+                 width="4.5"
+                 position="5 -5 0"
+                 rotation="-20 -90 0"
+                 src="Photos/immigrant-fam.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="6"
+                 width="5"
+                 position="9 3.5 -1.7"
+                 rotation="0 -90 0"
+                 src="Photos/Jewish-baner.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="6"
+                 width="5"
+                 position="2 -8 9"
+                 rotation="-45 185 0"
+                 src="Photos/mom-crying-holding-kid.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="6"
+                 width="6"
+                 position="-7 23 0"
+                 rotation="0 0 0"
+                 src="Photos/police-searching.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="8"
+                 width="8"
+                 position="7 23 -3"
+                 rotation="0 0 0"
+                 src="Photos/tweet-women-over-flint.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="8"
+                 width="9"
+                 position="-13 20 15"
+                 rotation="0 90 0"
+                 src="Photos/we-belong-together.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <a-plane
+                 height="5"
+                 width="6"
+                 position="-7 8 -7"
+                 rotation="0 50 0"
+                 src="Photos/whole-world-crying.jpg"
+                 opacity="0">
+                 
+                   <a-animation
+                     attribute="opacity"
+                     begin="1100"
+                     dur="5000"
+                     to="1"
+                   ><a-animation>
+                </a-plane>
+                
+                <!--<a-plane-->
+                <!-- height="5"-->
+                <!-- width="8.5"-->
+                <!-- position="4 -5 10"-->
+                <!-- rotation="-90 0 0"-->
+                <!-- src=""-->
+                <!-- opacity="0">-->
+                 
+                <!--   <a-animation-->
+                <!--     attribute="opacity"-->
+                <!--     begin="1100"-->
+                <!--     dur="5000"-->
+                <!--     to="1"-->
+                <!--   ><a-animation>-->
+                <!--</a-plane>-->
+                <!--<a-plane-->
+                <!-- height="5"-->
+                <!-- width="8.5"-->
+                <!-- position="4 -5 10"-->
+                <!-- rotation="-90 0 0"-->
+                <!-- src=""-->
+                <!-- opacity="0">-->
+                 
+                <!--   <a-animation-->
+                <!--     attribute="opacity"-->
+                <!--     begin="1100"-->
+                <!--     dur="5000"-->
+                <!--     to="1"-->
+                <!--   ><a-animation>-->
+                <!--</a-plane>-->
+                <!--<a-plane-->
+                <!-- height="5"-->
+                <!-- width="8.5"-->
+                <!-- position="4 -5 10"-->
+                <!-- rotation="-90 0 0"-->
+                <!-- src="Photos/whole-world-crying.jpg"-->
+                <!-- opacity="0">-->
+                 
+                <!--   <a-animation-->
+                <!--     attribute="opacity"-->
+                <!--     begin="1100"-->
+                <!--     dur="5000"-->
+                <!--     to="1"-->
+                <!--   ><a-animation>-->
+                <!--</a-plane>-->
+                <!--<a-plane-->
+                <!-- height="5"-->
+                <!-- width="8.5"-->
+                <!-- position="4 -5 10"-->
+                <!-- rotation="-90 0 0"-->
+                <!-- src="Photos/whole-world-crying.jpg"-->
+                <!-- opacity="0">-->
+                 
+                <!--   <a-animation-->
+                <!--     attribute="opacity"-->
+                <!--     begin="1100"-->
+                <!--     dur="5000"-->
+                <!--     to="1"-->
+                <!--   ><a-animation>-->
+                <!--</a-plane>-->
+                
+                
+                
+                
+            </a-entity>
+        <!--End of Main Scene-->
+        </a-scene>
+    </body>
+</html>
